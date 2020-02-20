@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0"
+            prefWidth="361.0" style="-fx-background-radius: 15; -fx-border-radius: 15;"
+            xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+    <children>
+        <AnchorPane layoutY="56.0" prefHeight="304.0" prefWidth="361.0"
+                    style="-fx-background-color: #FFE4C4; -fx-background-radius: 15;">
+            <children>
+                <TextField fx:id="massField" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="334.0"
+                           promptText="Введите сообщение" style="-fx-background-radius: 10;"/>
+                <PasswordField fx:id="keyField" layoutX="106.0" layoutY="49.0" promptText="Введите ключ"
+                               style="-fx-background-radius: 10;"/>
+                <TextField fx:id="shifrMassField" layoutX="14.0" layoutY="140.0" prefHeight="42.0" prefWidth="334.0"
+                           promptText="Зашифрованное/Разшифрованное сообщение" style="-fx-background-radius: 10;"/>
+                <Button fx:id="shifrButton" layoutX="74.0" layoutY="84.0" mnemonicParsing="false"
+                        style="-fx-background-radius: 10;" text="Зашифровать"/>
+                <Button fx:id="deletButton" layoutX="142.0" layoutY="261.0" mnemonicParsing="false"
+                        style="-fx-background-color: #DEB887; -fx-border-color: silver; -fx-background-radius: 10; -fx-border-radius: 10;"
+                        text="Очистить">
+                    <font>
+                        <Font name="System Bold" size="13.0"/>
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="-5.0" prefHeight="56.0" prefWidth="367.0"
+                    style="-fx-background-color: #DEB887; -fx-background-radius: 15;">
+            <children>
+                <Label layoutX="83.0" layoutY="13.0" prefHeight="30.0" prefWidth="201.0" text="PROSTAYA ZAMENA">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
